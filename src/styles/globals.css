@@ -1,0 +1,327 @@
+
+:root {
+  --color-bg: #fff;
+  --color-border: #e5e7eb;
+  --color-sidebar-item: #f3f4f6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(73, 143, 212);
+  font-family: "Roboto", sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  gap: 2rem;
+}
+
+.layout_content {
+  flex-grow: 1;
+}
+
+.sidebar_wrapper {
+  position: relative;
+}
+
+.sidebar {
+  width: 17rem;
+  height: 200%;
+  background-color: rgb(42, 170, 37);
+  padding: 1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  overflow: hidden;
+}
+
+.sidebar_top {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sidebar_logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.sidebar_logoName {
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+
+.sidebar_list {
+  list-style: none;
+}
+
+.sidebar_link {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  padding: 0.8rem 1rem;
+  display: flex;
+  background-color: var(--color-sidebar-item);
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+
+.sidebar_active {
+  color: #fff;
+  background-color: #10b981;
+}
+
+.sidebar_icon {
+  display: inline-flex;
+  font-size: 1.7rem;
+}
+
+.sidebar_name {
+  margin-left: 0.5rem;
+}
+
+[data-collapse="true"] {
+  width: 5.4rem;
+}
+
+[data-collapse="true"] .sidebar_name,
+[data-collapse="true"] .sidebar_logoName {
+  display: none;
+}
+
+.btn1 {
+  position: absolute;
+  right: 0;
+  top: 4.7rem;
+  border: none;
+  background-color: var(--color-bg);
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateX(50%);
+  font-size: 1.1rem;
+}
+
+.main {
+  width: 100%;
+  margin-bottom: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lay{
+  padding-top: 2rem;
+}
+
+.TextMarg{
+  margin-bottom: 4rem;
+}
+
+.grid{
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  gap: 6rem;
+  row-gap: 8rem;
+}
+
+.collum{
+  grid-column: span 6 / span 6;
+  position: relative;
+  bottom: 2.75rem;
+}
+
+
+
+
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%; /* Adjust the width of the carousel */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+
+
+
+
+
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%; /* Adjust the width of the carousel */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  left: 10%;
+  bottom: 250px;
+}
+
+.card {
+  background: gray;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+
+  
+}
+
+.card p {
+  padding-top: 1rem;
+  line-height: 150%;
+ 
+}
+
+.open{
+  width: 20rem
+}
+
+
+
+.app_2 {
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  left: 70%;
+  bottom: 102vh;
+}
+
+.card_2 {
+  background: gray;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  
+}
+
+.card_2 p {
+  padding-top: 1rem;
+  line-height: 150%;
+}
+
+.open_2{
+  width: 20rem
+}
+
+
+
+
+.app_3 {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  left: 10%;
+  bottom: 125vh;
+}
+
+.card_3{
+  background: gray;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  
+}
+
+.card_3 p {
+  padding-top: 1rem;
+  line-height: 150%;
+}
+
+.open_3{
+  width: 20rem
+}
+
+
+.app_4 {
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  left: 70%;
+  bottom: 200vh;
+}
+
+.card_4 {
+  background: gray;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  
+}
+
+.card_4 p {
+  padding-top: 1rem;
+  line-height: 150%;
+  color: white;
+}
+
+.open_4{
+  width: 20rem
+}
+
+
+.app_5 {
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  left: 40%;
+  bottom: 280vh;
+}
+
+.card_5 {
+  background: gray;
+  padding:3rem 5rem;
+  border-radius: 2rem;
+  
+}
+
+.card_5 p {
+  padding-top: 1rem;
+  line-height: 150%;
+  color: black;
+}
+
+.open_5{
+  width: 20rem
+}
+
+
+
+.button-style {
+  /* Define your button styles here */
+  background-color: #3104fc;
+  color: #fff;
+  padding: 30px 50px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  font-size: 30px;
+}
+
+.button-style:hover {
+  background-color: #29b99a;
+}
